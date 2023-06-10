@@ -15,7 +15,7 @@ import java.text.BreakIterator;
 
 public class NameActivity extends AppCompatActivity {
 
-    private TextView mWebsiteEditText;
+
 
 
     @Override
@@ -52,8 +52,8 @@ public class NameActivity extends AppCompatActivity {
     {
 
 
-        Uri webpage = Uri.parse("https://www.instagram.com/kah_yau10?r=nametag");
-        Intent intent = new Intent(Intent.ACTION_VIEW, webpage);
+        Uri webpage2 = Uri.parse("https://www.instagram.com/kah_yau10?r=nametag");
+        Intent intent = new Intent(Intent.ACTION_VIEW, webpage2);
 
         if(intent.resolveActivity(getPackageManager())!=null)
         {

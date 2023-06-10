@@ -18,7 +18,15 @@ import com.example.shoeverse.databinding.ActivityMainBinding;
 
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ImageView;
 import android.widget.Toast;
+
+//firebse
+ import com.google.firebase.database.DataSnapshot;
+ import com.google.firebase.database.DatabaseError;
+ import com.google.firebase.database.DatabaseReference;
+ import com.google.firebase.database.FirebaseDatabase;
+ import com.google.firebase.database.ValueEventListener;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -26,12 +34,17 @@ public class MainActivity extends AppCompatActivity {
     private ActivityMainBinding binding;
     private String mOrderMessage;
 
+    private DatabaseReference mDatabase;
+    private ImageView imageView;
     public static final String EXTRA_MESSAGE = "com.example.android.shoeverse.extra.MESSAGE";
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        imageView = findViewById(R.id.imageView);
+        mDatabase = FirebaseDatabase.getInstance().getReference();
 
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
@@ -86,27 +99,42 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Shows a message that the donut image was clicked.
+     * Shows a message that the Nike image was clicked.
      */
     public void showDonutOrder(View view) {
         mOrderMessage = getString(R.string.donut_order_message);
         displayToast(mOrderMessage);
+
+        mDatabase.child("LED1").setValue(1);
+        mDatabase.child("LED2").setValue(0);
+        mDatabase.child("LED3").setValue(0);
+        mDatabase.child("order_status").setValue(0);
     }
 
     /**
-     * Shows a message that the ice cream sandwich image was clicked.
+     * Shows a message that the Puma image was clicked.
      */
     public void showIceCreamOrder(View view) {
         mOrderMessage = getString(R.string.ice_cream_order_message);
         displayToast(mOrderMessage);
+
+        mDatabase.child("LED1").setValue(0);
+        mDatabase.child("LED2").setValue(1);
+        mDatabase.child("LED3").setValue(0);
+        mDatabase.child("order_status").setValue(0);
     }
 
     /**
-     * Shows a message that the froyo image was clicked.
+     * Shows a message that the Adidas was clicked.
      */
     public void showFroyoOrder(View view) {
         mOrderMessage = getString(R.string.froyo_order_message);
         displayToast(mOrderMessage);
+
+        mDatabase.child("LED1").setValue(0);
+        mDatabase.child("LED2").setValue(0);
+        mDatabase.child("LED3").setValue(1);
+        mDatabase.child("order_status").setValue(0);
     }
 
 

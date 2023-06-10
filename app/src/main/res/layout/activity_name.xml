@@ -19,7 +19,7 @@
         android:onClick="wenruiInsta"/>
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/adidas"
         android:layout_width="115dp"
         android:layout_height="139dp"
         android:layout_marginStart="24dp"
@@ -56,7 +56,7 @@
         android:maxLines="3"
         android:text="NG KAH YAU\nB082010047\n3BEEC S1/2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView3" />
+        app:layout_constraintTop_toTopOf="@+id/adidas" />
 
     <ImageView
         android:id="@+id/imageView4"

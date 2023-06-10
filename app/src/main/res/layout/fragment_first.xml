@@ -31,7 +31,7 @@
         android:layout_marginLeft="32dp"
         android:layout_marginTop="52dp"
         android:contentDescription="@string/donuts"
-        android:onClick="showDonutOrder"
+
         android:src="@drawable/nike"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textintro" />
@@ -42,31 +42,31 @@
     <!-- For Adidas-->
 
     <ImageView
-        android:id="@+id/nitro"
+        android:id="@+id/puma"
         android:layout_width="115dp"
         android:layout_height="120dp"
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
         android:layout_marginTop="52dp"
         android:contentDescription="@string/ice_cream_sandwiches"
-        android:onClick="showIceCreamOrder"
+
         android:src="@drawable/nitro"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nike" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/adidas"
         android:layout_width="115dp"
         android:layout_height="120dp"
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
         android:layout_marginTop="52dp"
         android:contentDescription="@string/froyo"
-        android:onClick="showFroyoOrder"
+
         android:src="@drawable/adidas"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nitro"
+        app:layout_constraintTop_toBottomOf="@id/puma"
         app:layout_constraintVertical_bias="0.029" />
 
     <TextView
@@ -95,8 +95,8 @@
         android:text="@string/ice_cream_sandwiches"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.3"
-        app:layout_constraintStart_toEndOf="@+id/nitro"
-        app:layout_constraintTop_toTopOf="@+id/nitro" />
+        app:layout_constraintStart_toEndOf="@+id/puma"
+        app:layout_constraintTop_toTopOf="@+id/puma" />
 
     <TextView
         android:id="@+id/froyo_description"
@@ -110,8 +110,8 @@
         android:text="@string/froyo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.355"
-        app:layout_constraintStart_toEndOf="@+id/imageView3"
-        app:layout_constraintTop_toTopOf="@+id/imageView3" />
+        app:layout_constraintStart_toEndOf="@+id/adidas"
+        app:layout_constraintTop_toTopOf="@+id/adidas" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

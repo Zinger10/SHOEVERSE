@@ -8,38 +8,9 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:534030453145:android:a9ca8b23f87648f2292b08",
+        "mobilesdk_app_id": "1:534030453145:android:7b870b97a7e94de1292b08",
         "android_client_info": {
           "package_name": "com.example.shoeverse"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "534030453145-md7hbt45pbus4dlo6k6jt899qf2ejsic.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyCnCUelyRY7V_owxBxITi5qnkGoujnacqg"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "534030453145-md7hbt45pbus4dlo6k6jt899qf2ejsic.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:534030453145:android:f509ffb0a726e7dd292b08",
-        "android_client_info": {
-          "package_name": "com.example.twoactivities"
         }
       },
       "oauth_client": [

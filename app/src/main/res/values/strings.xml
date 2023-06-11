@@ -22,13 +22,13 @@
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 
     <string name="intro_yexy">CURRENT TRENDS</string>
-    <string name="donuts">Nike Rival Fly 3</string>
-    <string name="ice_cream_sandwiches">Puma Deviate Nitro 2</string>
-    <string name="froyo">Adidas Galaxy 6</string>
+    <string name="nike_text">Nike Rival Fly 3</string>
+    <string name="puma_text">Puma Deviate Nitro 2</string>
+    <string name="adidas_text">Adidas Galaxy 6</string>
 
-    <string name="donut_order_message">You ordered a Nike.</string>
-    <string name="ice_cream_order_message">You ordered a Puma.</string>
-    <string name="froyo_order_message">You ordered an Adidas.</string>
+    <string name="nike_order_message">You ordered a Nike.</string>
+    <string name="puma_order_message">You ordered a Puma.</string>
+    <string name="adidas_order_message">You ordered an Adidas.</string>
 
 
     <string name="name_label_text">Name</string>

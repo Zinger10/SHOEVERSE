@@ -30,7 +30,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
         android:layout_marginTop="52dp"
-        android:contentDescription="@string/donuts"
+        android:contentDescription="@string/nike_text"
 
         android:src="@drawable/nike"
         app:layout_constraintStart_toStartOf="parent"
@@ -48,7 +48,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
         android:layout_marginTop="52dp"
-        android:contentDescription="@string/ice_cream_sandwiches"
+        android:contentDescription="@string/puma_text"
 
         android:src="@drawable/nitro"
         app:layout_constraintStart_toStartOf="parent"
@@ -61,7 +61,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
         android:layout_marginTop="52dp"
-        android:contentDescription="@string/froyo"
+        android:contentDescription="@string/adidas_text"
 
         android:src="@drawable/adidas"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -70,7 +70,7 @@
         app:layout_constraintVertical_bias="0.029" />
 
     <TextView
-        android:id="@+id/donut_description"
+        android:id="@+id/nike_description"
         android:layout_width="123dp"
         android:layout_height="28dp"
         android:layout_marginStart="24dp"
@@ -78,13 +78,13 @@
         android:layout_marginTop="40dp"
         android:layout_marginEnd="96dp"
         android:layout_marginRight="96dp"
-        android:text="@string/donuts"
+        android:text="@string/nike_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/nike"
         app:layout_constraintTop_toTopOf="@+id/nike" />
 
     <TextView
-        android:id="@+id/ice_cream_description"
+        android:id="@+id/puma_description"
         android:layout_width="146dp"
         android:layout_height="30dp"
         android:layout_marginStart="24dp"
@@ -92,14 +92,14 @@
         android:layout_marginTop="40dp"
         android:layout_marginEnd="24dp"
         android:layout_marginRight="24dp"
-        android:text="@string/ice_cream_sandwiches"
+        android:text="@string/puma_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.3"
         app:layout_constraintStart_toEndOf="@+id/puma"
         app:layout_constraintTop_toTopOf="@+id/puma" />
 
     <TextView
-        android:id="@+id/froyo_description"
+        android:id="@+id/adidas_description"
         android:layout_width="157dp"
         android:layout_height="35dp"
         android:layout_marginStart="24dp"
@@ -107,7 +107,7 @@
         android:layout_marginTop="40dp"
         android:layout_marginEnd="24dp"
         android:layout_marginRight="24dp"
-        android:text="@string/froyo"
+        android:text="@string/adidas_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.355"
         app:layout_constraintStart_toEndOf="@+id/adidas"

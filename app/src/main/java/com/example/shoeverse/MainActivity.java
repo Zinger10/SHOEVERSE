@@ -3,8 +3,6 @@ package com.example.shoeverse;
 import android.content.Intent;
 import android.os.Bundle;
 
-import com.google.android.material.snackbar.Snackbar;
-
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.view.View;
@@ -21,12 +19,10 @@ import android.view.MenuItem;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-//firebse
- import com.google.firebase.database.DataSnapshot;
- import com.google.firebase.database.DatabaseError;
+//firebase
  import com.google.firebase.database.DatabaseReference;
  import com.google.firebase.database.FirebaseDatabase;
- import com.google.firebase.database.ValueEventListener;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -101,8 +97,8 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Shows a message that the Nike image was clicked.
      */
-    public void showDonutOrder(View view) {
-        mOrderMessage = getString(R.string.donut_order_message);
+    public void showNikeOrder(View view) {
+        mOrderMessage = getString(R.string.nike_order_message);
         displayToast(mOrderMessage);
 
         mDatabase.child("LED1").setValue(1);
@@ -114,8 +110,8 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Shows a message that the Puma image was clicked.
      */
-    public void showIceCreamOrder(View view) {
-        mOrderMessage = getString(R.string.ice_cream_order_message);
+    public void showPumaOrder(View view) {
+        mOrderMessage = getString(R.string.puma_order_message);
         displayToast(mOrderMessage);
 
         mDatabase.child("LED1").setValue(0);
@@ -127,8 +123,8 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Shows a message that the Adidas was clicked.
      */
-    public void showFroyoOrder(View view) {
-        mOrderMessage = getString(R.string.froyo_order_message);
+    public void showAdidasOrder(View view) {
+        mOrderMessage = getString(R.string.adidas_order_message);
         displayToast(mOrderMessage);
 
         mDatabase.child("LED1").setValue(0);

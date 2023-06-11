@@ -21,10 +21,6 @@ public class FirstFragment extends Fragment {
             Bundle savedInstanceState
     ) {
         View view = inflater.inflate(R.layout.fragment_first,container,false);
-        /*
-        binding = FragmentFirstBinding.inflate(inflater, container, false);
-        return binding.getRoot();
-        */
 
         ImageView nikeImageView = view.findViewById(R.id.nike);
         ImageView pumaImageView = view.findViewById(R.id.puma);
@@ -32,21 +28,21 @@ public class FirstFragment extends Fragment {
         nikeImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ((MainActivity)requireActivity()).showDonutOrder(view);
+                ((MainActivity)requireActivity()).showNikeOrder(view);
             }
         });
 
         pumaImageView.setOnClickListener((new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ((MainActivity)requireActivity()).showIceCreamOrder(view);
+                ((MainActivity)requireActivity()).showPumaOrder(view);
             }
         }));
 
         adidasImageView.setOnClickListener((new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ((MainActivity)requireActivity()).showFroyoOrder(view);
+                ((MainActivity)requireActivity()).showAdidasOrder(view);
             }
         }));
         return view;
